@@ -1,0 +1,5 @@
+{
+    "usernameInput": "#normal_login_email",
+    "passwordInput": "#normal_login_password",
+    "loginButton": "button:has-text('Log in')"
+}

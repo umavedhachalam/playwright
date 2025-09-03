@@ -1,0 +1,117 @@
+{
+  "cookies": [
+    {
+      "name": "__cf_bm",
+      "value": "jAu7ar75Pjfj6B5446wV1W2JMXHuoMz8NKyhjkuXddM-1756903431-1.0.1.1-.EifxEoAsBkVxAGYslvFosCjxMqY0Y99u1z_aduj9rg5A3TM0tu.W.efF5eItLF5Q3WGftXAYlKJVgFF9rvJjjndzfJWyttmTJ2B4IHOFEw",
+      "domain": ".calendly.com",
+      "path": "/",
+      "expires": 1756905231.164866,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cfuvid",
+      "value": "kqpbXT3MJHnq3UtwZyCmuQMgMV6uXC9HxF6mS1ZIA7o-1756903431163-0.0.1.1-604800000",
+      "domain": ".calendly.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1756903432158.88039777689240181",
+      "domain": ".dtaak.com",
+      "path": "/",
+      "expires": 1764679437,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.482514276.1756903432",
+      "domain": ".dtaak.com",
+      "path": "/",
+      "expires": 1791463433.239451,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.703719094.1756903432",
+      "domain": ".dtaak.com",
+      "path": "/",
+      "expires": 1756989833,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat_gtag_UA_166937057_1",
+      "value": "1",
+      "domain": ".dtaak.com",
+      "path": "/",
+      "expires": 1756903492,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__stripe_mid",
+      "value": "b28b024f-046f-4532-b605-82b4cdae95e39be99e",
+      "domain": ".rev.dtaak.com",
+      "path": "/",
+      "expires": 1788439435,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "__stripe_sid",
+      "value": "b3942198-7789-46aa-bd39-aa3ea61e339b458702",
+      "domain": ".rev.dtaak.com",
+      "path": "/",
+      "expires": 1756905235,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "m",
+      "value": "699e669c-4bca-4e5d-b4ba-f5b39e57170c4016b9",
+      "domain": "m.stripe.com",
+      "path": "/",
+      "expires": 1791463435.235374,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://rev.dtaak.com",
+      "localStorage": [
+        {
+          "name": "lastExternalReferrer",
+          "value": "empty"
+        },
+        {
+          "name": "lastExternalReferrerTime",
+          "value": "1756903432126"
+        },
+        {
+          "name": "@revivingmind/authentication/token",
+          "value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NTY5MDM0MzUsIm5iZiI6MTc1NjkwMzQzNSwianRpIjoiYThhMTE1ZGMtYjY2OS00OWU4LWIyODktYzdkMGY2ZTdmNjFiIiwiZXhwIjoxNzU2OTg5ODM1fQ.N9hpRxf2pjBcBv-rasL4c6cXzO98RcSOE5MeVW9qFnk\""
+        },
+        {
+          "name": "topicsLastReferenceTime",
+          "value": "1756903437241"
+        }
+      ]
+    }
+  ]
+}
