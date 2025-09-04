@@ -1,22 +1,15 @@
-import { Page, expect } from '@playwright/test';
-import selectors from '../selectors/Login.json';
- 
-export default class LoginPage {
-  readonly page: Page;
- 
-  constructor(page: Page) {
-    this.page = page;
-  }
- 
-  async gotoLogin(email:string, password:string) {
-    await this.page.goto('/login');
-    await this.page.locator(selectors.usernameInput).fill(email);
-    await this.page.locator(selectors.passwordInput).fill(password);
-    await this.page.locator(selectors.loginButton).click();
-  }
- 
- 
-  // async assertLoginSuccess() {
-  //   await expect(this.page).toHaveURL(/dashboard);
-  // }
+import { LoginPath } from '../selectors/index';
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+export async function createLogin(page: any) {
+
+  const email = process.env.EMAIL;
+  const password = process.env.PASSWORD;
+
+  const loginPath = new LoginPath();
+  await page.locator(loginPath.userId).fill(email);
+  await page.getByPlaceholder(loginPath.passId).fill(password);
+  await page.getByRole("button", { name: "Sign In" }).click();
+
 }
