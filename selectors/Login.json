@@ -1,5 +1,7 @@
 {
-  "usernameInput": "input[name='email']",
-  "passwordInput": "input[name='password']",
-  "loginButton": "button:has-text('Log in')"
+  "login": {
+    "emailInput": "Enter your email",
+    "passwordInput": "password",
+    "loginButton": "log in"
+  }
 }

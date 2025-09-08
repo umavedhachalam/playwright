@@ -1,16 +1,17 @@
-import { Page } from '@playwright/test';
-import { LoginSelect ,login_select_new} from '../selectors/index';
-
-
+import { Page, expect } from "@playwright/test";
+import { Selectors } from "../selectors";
+ 
 export class LoginPage {
-
-  constructor(private page: Page) {}
-  
-  async loginFlow(username: string, password: string) {
-    await this.page.locator(login_select_new.usernameInput).waitFor({ state: 'visible' });
-    await this.page.fill(login_select_new.usernameInput, username);
-    await this.page.locator(login_select_new.passwordInput).waitFor({ state: 'visible' });
-    await this.page.fill(login_select_new.passwordInput, password);
-    await this.page.locator(login_select_new.loginButton).click();
+  private loginSelectors;
+  constructor(private page: Page, private selectors: Selectors) {
+    this.loginSelectors = this.selectors.loginSelectors;
   }
+ 
+  async loginFlow(email: string, password: string) {
+    await this.page.locator(this.loginSelectors.emailInput).fill(email);
+    await this.page.locator(this.loginSelectors.passwordInput).fill(password);
+    await this.page.locator(this.loginSelectors.loginButton).click();
+  }
+  
 }
+ 
