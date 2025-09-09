@@ -13,7 +13,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-  baseURL: 'https://dev.noqu.app/#/login',
+  baseURL: 'http://13.126.213.18:4000/login',
   trace: 'on-first-retry',
   video: 'retain-on-failure',
   screenshot: 'only-on-failure',

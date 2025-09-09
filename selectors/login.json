@@ -1,7 +1,28 @@
 {
-  "usernameInput": "#email",
-  "passwordInput": "Password",
-  "loginButton": "Sign In"
+
+"loginCredentials":{
+  "usernameInput": "#normal_login_email",
+  "passwordInput": "#normal_login_password",
+  "loginButton": "submit"
+},
+
+
+"selectProject": {
+    "project":  ".project-group-card",
+    "clickProject": "Requested",
+    "selectRequirement": ".pointer"
+},
+
+"editProject": {
+    "priority": "#horizontal_login_priority"
+    
+}
+
+
+
+
+
+
 }
 
 
