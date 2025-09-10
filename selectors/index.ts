@@ -1,16 +1,8 @@
-import sample from "./login.json";
- 
+import login from "../selectors/login.json";
+import projects from "../selectors/projects.json";
+
 export class Selectors {
-  usernameInput(usernameInput: any) {
-    throw new Error('Method not implemented.');
-  }
-  passwordInput(passwordInput: any) {
-    throw new Error('Method not implemented.');
-  }
-  loginButton(loginButton: any) {
-    throw new Error('Method not implemented.');
-  }
-  loginSelectors = sample.login;
-  
+  loginSelectors = login;
+  // profileSelectors = profile;
+  projectsSelectors = projects;
 }
-// export const login_select_new = loginnew

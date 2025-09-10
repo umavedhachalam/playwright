@@ -1,0 +1,49 @@
+{
+  "cookies": [
+    {
+      "name": "authToken",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjA4LCJjdXJyZW50X3JvbGVJZCI6MjQsInJvbGVJZHMiOltdLCJlbWFpbCI6ImFydW5AeW9wbWFpbC5jb20iLCJpYXQiOjE3NTc1MTA0Njd9.D6hAwNjA6ritKrUVTTDD5KUuaOQ_FG7WGb34jV7WaYM",
+      "domain": "13.126.213.18",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userId",
+      "value": "208",
+      "domain": "13.126.213.18",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "current_roleId",
+      "value": "24",
+      "domain": "13.126.213.18",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://13.126.213.18:4000",
+      "localStorage": [
+        {
+          "name": "role",
+          "value": "24"
+        },
+        {
+          "name": "userName",
+          "value": "Arun"
+        }
+      ]
+    }
+  ]
+}

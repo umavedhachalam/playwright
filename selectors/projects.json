@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "projectCardName": "Test",
+    "projectCardSelector": "",
+    "innerCardName": "IPC",
+    "innerCardSelector": "",
+    "editButton": "Edit",
+    "editButtonSelector": "",
+    "requirementListTab": "Requirement List",
+    "requirementListTabSelector": "",
+    "addRequirementButton": "Add Requirement",
+    "addRequirementButtonSelector": ""
+  }
+}
+
+

@@ -1,7 +1,14 @@
 {
-  "login": {
-    "emailInput": "Enter your email",
-    "passwordInput": "password",
-    "loginButton": "log in"
-  }
+    "login":{
+    "email":"Enter your email",
+    "password":"Enter your password",
+    "loginbtn":"Log in"
+},
+    "dashboard":{
+    "test":"Test",
+    "testProjectCard":"Test",
+    "editButton":"Edit",
+    "projectSetupTab":"Project Setup",
+    "requirementListTab":"Requirement List"
+}
 }
