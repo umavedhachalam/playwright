@@ -10,9 +10,7 @@
 "selectProject": {
     "project":  ".project-group-card",
     "clickProject": "Requested",
-    "selectRequirement": ".pointer",
-    "automationTitle": "text=Automation",
-    "editIcon": "[data-testid='edit-icon']"
+    "processFinanceCell": "role=cell[name='Process - Finance']"
 },
 
 "projectInfo": {
@@ -20,8 +18,9 @@
     "category": "#horizontal_login_category",
     "dataRequirement": "#horizontal_login_datarequirement",
     "requirementTitle": "#horizontal_login_requirementTitle",
-    "dueDate": "#horizontal_login_dueDate",
-    "reviewerDueDate": "#horizontal_login_reviewerDueDate"
+    "dueDateBox": "#horizontal_login_dueDate >> role=textbox[name='DD-MM-YYYY']",
+    "reviewerDueDateBox": "#horizontal_login_reviewerDueDate >> role=textbox[name='DD-MM-YYYY']",
+    "dateCell": ".ant-picker-cell-inner"
 }
 
 
