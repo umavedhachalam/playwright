@@ -12,7 +12,8 @@ test('should complete project flow', async ({ page }) => {
     await page.goto('/');
     await loginPage.login(email, password);
     await loginPage.selectProject();
-     await loginPage.fillProjectInfo(testData.requirement);
+    await loginPage.fillProjectInfo(testData.requirement);
+    await loginPage.pickDueAndReviewerDates(testData.requirement.dueDate!, testData.requirement.reviewerDueDate!);
     // Optionally, assert something after filling project info
 });
 

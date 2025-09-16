@@ -10,16 +10,17 @@
 "selectProject": {
     "project":  ".project-group-card",
     "clickProject": "Requested",
-    "processFinanceCell": "role=cell[name='Process - Finance']"
+    "devBoysCell": "role=cell[name='dev boys']"
 },
+
 
 "projectInfo": {
     "priority": "#horizontal_login_priority",
     "category": "#horizontal_login_category",
     "dataRequirement": "#horizontal_login_datarequirement",
     "requirementTitle": "#horizontal_login_requirementTitle",
-    "dueDateBox": "#horizontal_login_dueDate >> role=textbox[name='DD-MM-YYYY']",
-    "reviewerDueDateBox": "#horizontal_login_reviewerDueDate >> role=textbox[name='DD-MM-YYYY']",
+    "dueDate": "#horizontal_login_dueDate >> role=textbox[name='DD-MM-YYYY']",
+    "reviewerDueDate": "#horizontal_login_reviewerDueDate >> role=textbox[name='DD-MM-YYYY']",
     "dateCell": ".ant-picker-cell-inner"
 }
 
