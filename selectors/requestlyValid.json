@@ -3,36 +3,35 @@
     "emailField": { "role": "textbox", "name": "Enter your email" },
     "passwordField": { "role": "textbox", "name": "Enter your password" },
     "loginButton": { "role": "button", "name": "Log in" }
-    
   },
   "project": {
+    "school": { "text": "school001" },
+    "viewProjectHeading": { "role": "heading", "name": "View Project" },
+    "searchBox": { "role": "textbox", "name": "Search" },
+    "searchdata": { "text": "neural_network" },
+
     "requirementTitle": "horizontal_login_requirementTitle",
-
-    "priority":"horizontal_login_priority",
-    "category":"horizontal_login_category",
-    "dataRequirement":"horizontal_login_datarequirement",
-    "dueDate":"horizontal_login_dueDate",
-    "department":"horizontal_login_department",
-    "company":"horizontal_login_companyId",
-    "custodian":"horizontal_login_custodian",
-    "reviewer":"horizontal_login_reviewer",
-    
-    "reviewerDueDate":"horizontal_login_reviewerDueDate",
-    "horizontal_login_escalation1":"horizontal_login_escalation1",
-     "horizontal_login_escalation2":"horizontal_login_escalation2",
-     "horizontal_login_escalation3":"horizontal_login_escalation3",
-     "query":".ant-input",
-          "kebabMenu":"svg[data-icon='more']",
-            "actionMenu": "ul[role='menu']"
-
-
-
-
+    "priority": "horizontal_login_priority",
+    "category": "horizontal_login_category",
+    "dataRequirement": "horizontal_login_datarequirement",
+    "dueDate": "horizontal_login_dueDate",
+    "department": "horizontal_login_department",
+    "company": "horizontal_login_companyId",
+    "custodian": "horizontal_login_custodian",
+    "reviewer": "horizontal_login_reviewer",
+    "reviewerDueDate": "horizontal_login_reviewerDueDate",
+    "escalation1": "horizontal_login_escalation1",
+    "escalation2": "horizontal_login_escalation2",
+    "escalation3": "horizontal_login_escalation3",
+    "query": "input[placeholder='Type Text']",
+    "kebabMenu": "svg[data-icon='more']",
+    "actionMenu": "ul[role='menu']",
+    "cancel": "button[ant-click-animating-without-extra-node='false']"
   },
   "locators": {
     "escalation1Icon": "#horizontal_login_escalation1 svg",
-    "escalation3Icon": "#horizontal_login_escalation3 svg",
-    "escalation2Icon": "#horizontal_login_escalation2 svg"
+    "escalation2Icon": "#horizontal_login_escalation2 svg",
+    "escalation3Icon": "#horizontal_login_escalation3 svg"
   },
   "attachment": {
     "button": { "role": "button", "name": "Attachment" },
