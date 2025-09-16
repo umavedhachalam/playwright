@@ -21,11 +21,10 @@ await this.page
   .getByRole(data.login.passwordField.role as any, { name: data.login.passwordField.name })
   .fill(password);
 
-// await this.page
-//   .getByRole(data.login.loginButton.role as any, { name: data.login.loginButton.name })
-//   .click();
+await this.page
+  .getByRole(data.login.loginButton.role as any, { name: data.login.loginButton.name })
+  .click();
 
-await this. page.getByRole(data.login.loginButton.role as any).click();
 
 // Project flow
 await this.page.getByText(data.project.school.text).click();
@@ -35,8 +34,16 @@ await this.page
   .click();
 
 await this.page
-  .getByRole(data.project.searchBox.role as any, { name: data.project.searchBox.name }).fill(data.project.searchdata.text);
-  await this.page.keyboard.press('Enter');
+  // .getByRole(data.project.searchBox.role as any, { name: data.project.searchBox.name }).fill(data.project.searchdata.text);
+//  await this.page.keyboard.press('Enter');
+//  await this.page.getByRole(data.project.searchBox.role as any, { name: data.project.searchBox.name }).type('k');
+//  await this.page.keyboard.press('Tab');
+ 
+ 
+ await this. page.locator('td', { hasText: 'neural_network' }).click();
+
+
+
 
 
     await this.page.getByText(data.project.priorityMedium.text).click();

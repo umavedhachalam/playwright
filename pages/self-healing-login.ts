@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
 import { SelfHealingPage, SelfHealingElement, ElementStrategies, SelfHealingConfig } from '../utils/self-healing';
-import { testData } from '../selectors/index';
+import { testData } from '../data/testData';
 
 export class SelfHealingLoginPage {
   private page: Page;
