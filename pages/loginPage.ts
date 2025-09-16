@@ -96,34 +96,30 @@ export class LoginPage {
     }
 
     async pickDueAndReviewerDates(dueDate: string, reviewerDueDate: string) {
-        // Helper to robustly pick a date
-        const pickDate = async (inputSelector: string, dateCellSelector: string, value: string) => {
-            const input = this.page.locator(inputSelector);
-            await input.waitFor({ state: 'visible', timeout: 5000 });
-            await input.waitFor({ state: 'attached', timeout: 5000 });
-            // If calendar is already open, close it by pressing Escape
-            if (await this.page.locator('.ant-picker-dropdown[style*="display: block"]').count() > 0) {
-                await this.page.keyboard.press('Escape');
-                await this.page.waitForSelector('.ant-picker-dropdown', { state: 'hidden', timeout: 2000 }).catch(() => {});
-            }
-            await input.click({ force: true });
-            // Wait a bit for the popup to render
-            await this.page.waitForTimeout(200);
-            // Wait for the calendar popup
-            await this.page.waitForSelector('.ant-picker-dropdown', { state: 'visible', timeout: 5000 });
-            const dayCell = this.page.locator(dateCellSelector, { hasText: value });
-            if (await dayCell.count() > 0) {
-                await dayCell.first().click();
-            } else {
-                throw new Error(`Date cell with value '${value}' not found in calendar.`);
-            }
-        };
-        const dueDateBox = this.loginFlow.projectInfo.dueDate;
-        const reviewerDueDateBox = this.loginFlow.projectInfo.reviewerDueDate;
-        const dateCellSelector = this.loginFlow.projectInfo.dateCell;
-        if (!dueDateBox || !reviewerDueDateBox || !dateCellSelector) throw new Error('Date input or cell selector is undefined');
-        await pickDate(dueDateBox, dateCellSelector, dueDate);
-        await pickDate(reviewerDueDateBox, dateCellSelector, reviewerDueDate);
+        // Use separate selectors for input and cell for each field
+        const dueDateInput = this.loginFlow.projectInfo.dueDateInput || this.loginFlow.projectInfo.dueDate;
+        const dueDateCell = this.loginFlow.projectInfo.dueDateCell || this.loginFlow.projectInfo.dateCell;
+        const reviewerDueDateInput = this.loginFlow.projectInfo.reviewerDueDateInput || this.loginFlow.projectInfo.reviewerDueDate;
+        const reviewerDueDateCell = this.loginFlow.projectInfo.reviewerDueDateCell || this.loginFlow.projectInfo.dateCell;
+        if (!dueDateInput || !dueDateCell || !reviewerDueDateInput || !reviewerDueDateCell) throw new Error('Date input or cell selector is undefined');
+        // Pick Due Date
+        await this.page.locator(dueDateInput).click();
+        await this.page.waitForSelector('.ant-picker-dropdown', { state: 'visible', timeout: 5000 });
+        const dueDayCell = this.page.locator(dueDateCell, { hasText: dueDate });
+        if (await dueDayCell.count() > 0) {
+            await dueDayCell.first().click();
+        } else {
+            throw new Error(`Due date cell with value '${dueDate}' not found in calendar.`);
+        }
+        // Pick Reviewer Due Date
+        await this.page.locator(reviewerDueDateInput).click();
+        await this.page.waitForSelector('.ant-picker-dropdown', { state: 'visible', timeout: 5000 });
+        const reviewerDayCell = this.page.locator(reviewerDueDateCell, { hasText: reviewerDueDate });
+        if (await reviewerDayCell.count() > 0) {
+            await reviewerDayCell.first().click();
+        } else {
+            throw new Error(`Reviewer due date cell with value '${reviewerDueDate}' not found in calendar.`);
+        }
     }
-}
 
+}

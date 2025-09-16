@@ -10,7 +10,7 @@
 "selectProject": {
     "project":  ".project-group-card",
     "clickProject": "Requested",
-    "devBoysCell": "role=cell[name='dev boys']"
+    "devBoysCell": "role=cell[name='AT']"
 },
 
 
