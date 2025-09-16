@@ -67,5 +67,6 @@ await this.page
 
     // 🔹 Wait for project page
     await this.page.waitForURL(data.urls.projectsPage);
+    await this.page.waitForURL(data.urls.projectsPage);
   }
 }
