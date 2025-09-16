@@ -1,0 +1,42 @@
+{
+  "validCredentials": {
+    "username": "test123",
+    "password": "testpass123"
+  },
+  "invalidCredentials": {
+    "username": "invalid@user",
+    "password": "testpass123"
+  },
+  "emptyCredentials": {
+    "username": "",
+    "password": ""
+  },
+  "testUsers": [
+    {
+      "username": "user1",
+      "password": "pass1"
+    },
+    {
+      "username": "user2", 
+      "password": "pass2"
+    },
+    {
+      "username": "user3",
+      "password": "pass3"
+    }
+  ],
+  "urls": {
+    "loginPage": "http://33.33.33.62:7900/login",
+    "dashboard": "http://33.33.33.62:7900/dashboard"
+  },
+  "timeouts": {
+    "default": 10000,
+    "login": 15000,
+    "network": 5000
+  },
+  "retryConfig": {
+    "maxRetries": 3,
+    "retryDelay": 1000
+  }
+}
+

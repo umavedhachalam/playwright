@@ -1,0 +1,21 @@
+{
+  "custodianValid": {
+    "data":"school001",
+    "priority": "high",
+    "requirementTitle": "neural_network",
+    "process": "technology",
+    "dueDate":"22-08-2025",
+    "department":"it/cse",
+    "dataRequirement":"data",
+    "company":"School",
+    "custodian":"thursday",
+    "reviewer":"friday",
+     "query":"Hey",
+     "threeDot":"Move to Query",
+     "reviewerDueDate":"22-08-2025",
+     "escalation1":"friday",
+     "escalation2":"tuesday"
+
+    
+  }
+}

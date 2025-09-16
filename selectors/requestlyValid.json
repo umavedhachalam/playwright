@@ -1,0 +1,33 @@
+{
+  "login": {
+    "emailField": { "role": "textbox", "name": "Enter your email" },
+    "passwordField": { "role": "textbox", "name": "Enter your password" },
+    "loginButton": { "role": "button", "name": "Log in" }
+    
+  },
+  "project": {
+    "school": { "text": "school001" },
+    "viewProjectHeading": { "role": "heading", "name": "View Project" },
+    "searchBox": { "role": "textbox", "name": "Search" },
+    "searchdata": { "text": "neural_network" },
+    "priorityMedium": { "text": "Select Priority Medium" },
+    "companySchool": { "text": "Select Company School" },
+    "custodianThursday": { "text": "Select Custodian thursday" },
+    "reviewerFriday": { "text": "Select Reviewer friday" },
+    "escalation1Friday": { "text": "Select Escalation 1 friday" },
+    "escalation3Tuesday": { "text": "Select Escalation 3 tuesday" },
+    "escalation1Combobox": { "role": "combobox", "filterText": "Select Escalation 1 friday" }
+  },
+  "locators": {
+    "escalation1Icon": "#horizontal_login_escalation1 svg",
+    "escalation3Icon": "#horizontal_login_escalation3 svg",
+    "escalation2Icon": "#horizontal_login_escalation2 svg"
+  },
+  "attachment": {
+    "button": { "role": "button", "name": "Attachment" },
+    "modal": ".ant-modal > div"
+  },
+  "urls": {
+    "projectsPage": "**/projects"
+  }
+}
