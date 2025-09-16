@@ -6,17 +6,28 @@
     
   },
   "project": {
-    "school": { "text": "school001" },
-    "viewProjectHeading": { "role": "heading", "name": "View Project" },
-    "searchBox": { "role": "textbox", "name": "Search" },
-    "searchdata": { "text": "neural_network" },
-    "priorityMedium": { "text": "Select Priority Medium" },
-    "companySchool": { "text": "Select Company School" },
-    "custodianThursday": { "text": "Select Custodian thursday" },
-    "reviewerFriday": { "text": "Select Reviewer friday" },
-    "escalation1Friday": { "text": "Select Escalation 1 friday" },
-    "escalation3Tuesday": { "text": "Select Escalation 3 tuesday" },
-    "escalation1Combobox": { "role": "combobox", "filterText": "Select Escalation 1 friday" }
+    "requirementTitle": "horizontal_login_requirementTitle",
+
+    "priority":"horizontal_login_priority",
+    "category":"horizontal_login_category",
+    "dataRequirement":"horizontal_login_datarequirement",
+    "dueDate":"horizontal_login_dueDate",
+    "department":"horizontal_login_department",
+    "company":"horizontal_login_companyId",
+    "custodian":"horizontal_login_custodian",
+    "reviewer":"horizontal_login_reviewer",
+    
+    "reviewerDueDate":"horizontal_login_reviewerDueDate",
+    "horizontal_login_escalation1":"horizontal_login_escalation1",
+     "horizontal_login_escalation2":"horizontal_login_escalation2",
+     "horizontal_login_escalation3":"horizontal_login_escalation3",
+     "query":".ant-input",
+          "kebabMenu":"svg[data-icon='more']",
+            "actionMenu": "ul[role='menu']"
+
+
+
+
   },
   "locators": {
     "escalation1Icon": "#horizontal_login_escalation1 svg",

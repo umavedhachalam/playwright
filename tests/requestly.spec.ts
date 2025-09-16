@@ -13,6 +13,5 @@ test('login test', async ({ page }) => {
 
   await page.goto(url + '/login');   
   await loginPage.login(username, password);
-
-  
+  await page.waitForTimeout(5000);
 });

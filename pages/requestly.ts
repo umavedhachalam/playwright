@@ -12,6 +12,7 @@ export class LoginPage {
 
   async login(username,password) {
     const data = this.selectors.loginData;
+    const valid = this.selectors.validData;
 
   await this.page
   .getByRole(data.login.emailField.role as any, { name: data.login.emailField.name })
@@ -43,15 +44,30 @@ await this.page
  await this. page.locator('td', { hasText: 'neural_network' }).click();
 
 
+"data":"school001",
+    "priority": "high",
+    "requirementTitle": "neural_network",
+    "process": "technology",
+    "dueDate":"22-08-2025",
+    "department":"it/cse",
+    "dataRequirement":"data",
+    "company":"School",
+    "custodian":"thursday",
+    "reviewer":"friday",
+     "query":"Hey",
+     "threeDot":"Move to Query",
+     "reviewerDueDate":"22-08-2025",
+     "escalation1":"friday",
+     "escalation2":"tuesday"
 
 
-
-    await this.page.getByText(data.project.priorityMedium.text).click();
-    await this.page.getByText(data.project.companySchool.text).click();
-    await this.page.getByText(data.project.custodianThursday.text).click();
-    await this.page.getByText(data.project.reviewerFriday.text).click();
-    await this.page.getByText(data.project.escalation1Friday.text).click();
-    await this.page.getByText(data.project.escalation3Tuesday.text).click();
+    await this.page.getByTestId(data.project.requirementTitle.text).filter({ hasText: valid.custodianValid.requirementTitle });
+    await this.page.getByText(data.project.priorityMedium.text).filter({ hasText: valid.custodianValid.priority});
+    await this.page.getByText(data.project.companySchool.text).filter({ hasText: valid.custodianValid.company });
+    await this.page.getByText(data.project.custodianThursday.text).filter({ hasText: valid.custodianValid.custodian});
+    await this.page.getByText(data.project.reviewerFriday.text).filter({ hasText: valid.custodianValid.reviewer});
+    await this.page.getByText(data.project.escalation1Friday.text).filter({ hasText: valid.custodianValid.escalation1 });
+    await this.page.getByText(data.project.escalation3Tuesday.text).filter({ hasText: valid.custodianValid.escalation2 });
 
    await this.page
   .getByRole(data.project.escalation1Combobox.role as any)
