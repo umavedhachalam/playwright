@@ -7,9 +7,12 @@ dotenv.config();
 test('login test', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
-  const username = process.env.USERNAMES as string;
-  const password = process.env.PASSWORDS as string;
+  const username = process.env.USERNAMES;
+  const password = process.env.PASSWORDS ;
+  const url = process.env.URL ;
 
-  await page.goto('/login');
+  await page.goto(url + '/login');   
   await loginPage.login(username, password);
+
+  
 });

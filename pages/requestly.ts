@@ -10,7 +10,7 @@ export class LoginPage {
     this.selectors = new NewSelectors();
   }
 
-  async login(username: string, password: string) {
+  async login(username,password) {
     const data = this.selectors.loginData;
 
   await this.page

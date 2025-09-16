@@ -1,7 +1,0 @@
-{
-  "usernameInput": "[formcontrolname='empID']",
-  "passwordInput": "[formcontrolname='password']",  
-  "loginButton": "button[type='submit'], button:has-text('Login'), button:has-text('Log In'), button:has-text('Sign In')",
-  "submitButton": "button[type='submit']",
-  "errorMessage": ".error, .alert, .message, [role='alert']"
-}
