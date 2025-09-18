@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { expect, Page } from '@playwright/test';
 import { NewSelectors } from '../selectors/new_index';
 
 export class LoginPage {
@@ -44,7 +44,7 @@ export class LoginPage {
     await this.page.locator('td', { hasText: 'neural_network' }).click();
 
 
-    
+
 
     await this.page.locator(data.project.requirementTitle).filter({ hasText: valid.custodianValid.requirementTitle });
     await this.page.locator(data.project.priority).filter({ hasText: valid.custodianValid.priority });
@@ -66,11 +66,16 @@ export class LoginPage {
     await this.page.locator(data.project.query).fill("asdf");
 
     await this.page.locator(data.project.kebabMenu).click();
-    await this.page.locator(data.project.actionMenu).nth(0).click();
+    await this.page.locator(data.project.actionMenu).filter({ hasText:"Move to Query" })
+    await this.page.getByRole('button', { name: 'Cancel' }).click();
+
+    
 
 
 
-
+    //a=wait this.page.pause();
+    //expect(a).tovisible();
+    //to have , has, contains
 
 
   }
