@@ -15,17 +15,33 @@
 
 
 "projectInfo": {
+   
     "priority": "#horizontal_login_priority",
     "category": "#horizontal_login_category",
     "dataRequirement": "#horizontal_login_datarequirement",
     "requirementTitle": "#horizontal_login_requirementTitle",
-    "dueDate": "#horizontal_login_dueDate >> role=textbox[name='DD-MM-YYYY']",
-    "reviewerDueDate": "#horizontal_login_reviewerDueDate >> role=textbox[name='DD-MM-YYYY']",
-    "dateCell": ".ant-picker-cell-inner"
+    "dueDateInput": "#horizontal_login_dueDate >> role=textbox[name='DD-MM-YYYY']",
+    "dueDateCell": ".ant-picker-cell:not(.ant-picker-cell-disabled) .ant-picker-cell-inner",
+    "reviewerDueDateInput": "#horizontal_login_reviewerDueDate >> role=textbox[name='DD-MM-YYYY']",
+    "reviewerDueDateCell": ".ant-picker-cell:not(.ant-picker-cell-disabled) .ant-picker-cell-inner",
+    "dateCell": ".ant-picker-cell:not(.ant-picker-cell-disabled) .ant-picker-cell-inner",
+    "department": "input[type='text']",
+    "uploadButton": "button[name='Upload Sample Files']",
+    "companyDropdown": "#horizontal_login_company",
+    "custodianDropdown": "#horizontal_login_custodian",
+    "reviewerDropdown": "#horizontal_login_reviewer",
+    "escalationDropdown": "#horizontal_login_escalation1",
+    "optionSelector": "div[class*='ant-select-item-option']"
+    
+
+
+
+
+
+
+
+  }
 }
 
-
-
-}
 
 

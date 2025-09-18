@@ -5,7 +5,13 @@
     "dataRequirement": "QA testing",
     "requirementTitle": "hii req",
     "dueDate": "25",
-    "reviewerDueDate": "30"
+    "reviewerDueDate": "30",
+    "companySelect": "AI WORLD",
+    "custodianSelect": "kesav",
+    "reviewerSelect": "mugil",
+    "escalationSelect": "kannan"
+
+
   }
 }
  
