@@ -1,10 +1,13 @@
 {
   "login": {
+    
     "emailField": { "role": "textbox", "name": "Enter your email" },
     "passwordField": { "role": "textbox", "name": "Enter your password" },
     "loginButton": { "role": "button", "name": "Log in" }
   },
   "project": {
+    "neuralNetworkCell": { "locator": "td", "hasText": "neural_network"},
+    "addProject": { "role": "button", "name": "Add Project" },
     "school": { "text": "school001" },
     "viewProjectHeading": { "role": "heading", "name": "View Project" },
     "searchBox": { "role": "textbox", "name": "Search" },
@@ -26,18 +29,9 @@
     "query": "input[placeholder='Type Text']",
     "kebabMenu": "svg[data-icon='more']",
     "actionMenu": "ul[role='menu']",
-    "cancel": "button[ant-click-animating-without-extra-node='false']"
-  },
-  "locators": {
-    "escalation1Icon": "#horizontal_login_escalation1 svg",
-    "escalation2Icon": "#horizontal_login_escalation2 svg",
-    "escalation3Icon": "#horizontal_login_escalation3 svg"
-  },
-  "attachment": {
-    "button": { "role": "button", "name": "Attachment" },
-    "modal": ".ant-modal > div"
-  },
-  "urls": {
-    "projectsPage": "**/projects"
+    "actionMenuText" :"Move to Query",
+    "cancel": "'button', { name: 'Cancel' }"
+
   }
+ 
 }

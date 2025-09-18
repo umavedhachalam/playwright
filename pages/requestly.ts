@@ -41,10 +41,10 @@ export class LoginPage {
     //  await this.page.keyboard.press('Tab');
 
 
-    await this.page.locator('td', { hasText: 'neural_network' }).click();
+    await this.page.locator(data.project.neuralNetworkCell.locator).filter( { hasText: data.project.neuralNetworkCell.hasText}).click();
 
 
-
+    //Data Verification from json file
 
     await this.page.locator(data.project.requirementTitle).filter({ hasText: valid.custodianValid.requirementTitle });
     await this.page.locator(data.project.priority).filter({ hasText: valid.custodianValid.priority });
@@ -63,11 +63,11 @@ export class LoginPage {
 
     await this.page.locator(data.project.escalation1).filter({ hasText: valid.custodianValid.escalation1 });
     await this.page.locator(data.project.escalation2).filter({ hasText: valid.custodianValid.escalation2 });
-    await this.page.locator(data.project.query).fill("asdf");
+    await this.page.locator(data.project.query).fill(this.selectors.validData.testData.query);
 
     await this.page.locator(data.project.kebabMenu).click();
-    await this.page.locator(data.project.actionMenu).filter({ hasText:"Move to Query" })
-    await this.page.getByRole('button', { name: 'Cancel' }).click();
+    await this.page.locator(data.project.actionMenu).filter({ hasText: data.project.actionMenuText }).click();
+    await this.page.getByRole(data.project.cancel as any).click();
 
     
 
